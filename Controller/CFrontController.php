@@ -70,16 +70,16 @@ class CFrontController
                         CGestioneRicerca::blogHome();
                     }
                 }
-            } else {
-                if (CUtente::isLogged()){
+        } else {
+            if (CUtente::isLogged()){
 
-                        CGestioneRicerca::blogHome();
-
-                } else {
                     CGestioneRicerca::blogHome();
-                }
+
+            } else {
+                CGestioneRicerca::blogHome();
             }
         }
+    }
 
 
 }
